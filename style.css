@@ -1,0 +1,45 @@
+body{
+    background-color:ForestGreen;
+    }
+#Elements{
+    position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align:center;
+        color:white;
+         max-width: 90%;
+         max-height: 90%
+
+
+    }
+#plantImage{
+    border-radius: 50%;
+    overflow: hidden;
+    width:150;
+    height:150;}
+.ps{
+    color: Skyblue;}
+.hs{
+    font-size:1.5em;}
+
+
+.buttons{
+    color: white;
+        background-color: Lime;
+        font-size : 1em;
+        padding : 10px 20px;
+        border-radius:10px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+        }
+
+.buttons:hover{
+    background-color: SkyBlue;
+    }
+#Watering{
+    font-size : 3em;}
+#SettingsButton{
+    position: absolute;
+    top: 10px; /* Dostosuj wartość, aby ustawić odległość od górnej krawędzi */
+    right: 10px;}
