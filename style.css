@@ -21,14 +21,7 @@ body {
     width: 12px; /* Szerokość suwaka */
 }
 
-#Elements::-webkit-scrollbar-track {
-    background: ForestGreen; /* Kolor tła suwaka */
-}
 
-#Elements::-webkit-scrollbar-thumb {
-    background-color: ForestGreen; /* Kolor suwaka */
-    border-radius: 10px; /* Zaokrąglenie krawędzi suwaka */
-}
 
 #plantImage {
     border-radius: 50%;
