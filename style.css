@@ -13,13 +13,11 @@ body {
     color: white;
     max-width: 90%;
     max-height: 90%;
-        overflow-y: scroll; /* Dodaje pionowy suwak przewijania */
+        /*overflow-y: scroll; /* Dodaje pionowy suwak przewijania */
 
 
 }
-#Elements::-webkit-scrollbar {
-    width: 12px; /* Szerokość suwaka */
-}
+
 
 
 
