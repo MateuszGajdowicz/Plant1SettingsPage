@@ -1,45 +1,66 @@
-body{
-    background-color:ForestGreen;
-    }
-#Elements{
+body {
+    background-color: ForestGreen;
+    margin: 0; /* Usuwa domyślne marginesy */
+    font-family: Arial, sans-serif; /* Ustawia czcionkę */
+}
+
+#Elements {
     position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align:center;
-        color:white;
-         max-width: 90%;
-         max-height: 90%
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    max-width: 90%;
+    max-height: 90%;
+        overflow-y: scroll; /* Dodaje pionowy suwak przewijania */
 
 
-    }
-#plantImage{
+}
+#Elements::-webkit-scrollbar {
+    width: 12px; /* Szerokość suwaka */
+}
+
+#Elements::-webkit-scrollbar-track {
+    background: ForestGreen; /* Kolor tła suwaka */
+}
+
+#Elements::-webkit-scrollbar-thumb {
+    background-color: ForestGreen; /* Kolor suwaka */
+    border-radius: 10px; /* Zaokrąglenie krawędzi suwaka */
+}
+
+#plantImage {
     border-radius: 50%;
     overflow: hidden;
-    width:150;
-    height:150;}
-.ps{
-    color: Skyblue;}
-.hs{
-    font-size:1.5em;}
+    width: 150px; /* Poprawiłem brakującą jednostkę */
+    height: 150px; /* Poprawiłem brakującą jednostkę */
+}
 
+.ps {
+    color: Skyblue;
+}
 
-.buttons{
+.hs {
+    font-size: 1.5em;
+}
+
+.buttons {
     color: white;
-        background-color: Lime;
-        font-size : 1em;
-        padding : 10px 20px;
-        border-radius:10px;
-        cursor: pointer;
-        transition: background-color 0.5s;
-        }
+    background-color: Lime;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
 
-.buttons:hover{
+.buttons:hover {
     background-color: SkyBlue;
-    }
-#Watering{
-    font-size : 3em;}
-#SettingsButton{
+}
+
+#AccountButton {
     position: absolute;
-    top: 10px; /* Dostosuj wartość, aby ustawić odległość od górnej krawędzi */
-    right: 10px;}
+    top: 10px;
+    right: 10px;
+}
