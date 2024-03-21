@@ -17,18 +17,23 @@
     <p1 id = "p1" class = "ps" onclick = "SetName()">Plant 1</p1>
     <br>
 <h2 id = "h2" class = "hs">Required moisture percentage</h2>
-    <p2 id="p2" class = "ps">XXX%</p2>
+    <p2 id="p2" class = "ps" onclick ="RequiredMoisture()">XXX%</p2>
     <br>
 <h3 id = "h3" class = "hs">Watering Period</h3>
-    <p3 id ="p3" class = "ps">DD,HH,SS</p3>
+    <p3 id ="p3" class = "ps" onclick = "WateringPeriod()">DD,HH,SS</p3>
     <br>
     <h4 id ="h4" class = "hs">Send Email Notification</h4>
-    <p4 id ="p4" class = "ps">ON/OFF</p4>
+    <input type ="checkbox" id ="OnBox" class ="Boxes" onclick="OnOff()" > ON
+    <input type ="checkbox" id ="OffBox" class ="Boxes" onclick ="OnOff()" >OFF
+    <br><br>
+    <p4 id = "p4" class = "ps"></p4>
+
     <h5 id ="h5" class = "hs">Water the plant when the moisture is too low</h5>
-    <p5 id ="p4" class = "ps">ON/OFF</p5>
+    <input type ="checkbox" id ="On2Box" class ="Boxes" onclick ="OnOff2()" > ON
+    <input type="checkbox" id ="Off2Box" class="Boxes" onclick="OnOff2()">OFF
 
     <br><br><br><br><br><br>
-    <button id = "SaveButton" class="buttons">Save</button>
+    <button id="SaveButton" class="buttons" onclick="SaveOnClick()">Save</button>
 </div>
 
 <script src = "index.js"></script>
