@@ -1,7 +1,24 @@
 body {
     background-color: ForestGreen;
-    margin: 0; /* Usuwa domyślne marginesy */
-    font-family: Arial, sans-serif; /* Ustawia czcionkę */
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(-45deg, #269900, #228B22, #32CD32, #9fff80, #79ff4d);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #Elements {
@@ -13,7 +30,7 @@ body {
     color: white;
     max-width: 90%;
     max-height: 90%;
-        overflow-y: scroll; /* Dodaje pionowy suwak przewijania */
+    overflow-y: scroll; /* Dodaje pionowy suwak przewijania */
 
 
 }
@@ -41,29 +58,135 @@ body {
 }
 
 .ps {
-    color: Skyblue;
+    color: #6CB4EE;
+    font-size:1.5em;
+        font-weight:bold
 }
 
 .hs {
-    font-size: 1.5em;
-}
-
-.buttons {
-    color: white;
-    background-color: Lime;
-    font-size: 1em;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.5s;
-}
-
-.buttons:hover {
-    background-color: SkyBlue;
+    font-size: 2.0em;
 }
 
 #AccountButton {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+/* Stylizacja checkboxów */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: #e0e0e0;
+  border: 2px solid #a0a0a0;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Stylizacja ikony zaznaczenia */
+input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* Stylizacja checkboxów */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: #e0e0e0;
+  border: 2px solid #a0a0a0;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Stylizacja ikony zaznaczenia */
+input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s; /* Dodane przejście dla koloru tła */
+}
+
+/* Stylizacja checkboxa, gdy jest zaznaczony */
+input[type="checkbox"]:checked::before {
+  opacity: 1;
+  background-color: SkyBlue; /* Zmiana koloru tła na zielony */
+}
+
+/* Stylizacja checkboxa po najechaniu myszką */
+input[type="checkbox"]:hover {
+  border-color: #77dd77;
+}
+
+/* Ukrycie domyślnej formy checkboxa */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Stylizacja tekstu obok checkboxa */
+label {
+  margin-left: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Dodanie efektu podświetlenia dla tekstu obok checkboxa */
+label:hover {
+  color: #77dd77;
+}
+.buttons {
+    --b: 3px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: fff;
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+    font-weight: bold;
+    font-size: 2em;
+    cursor: pointer;
+    border: none;
+    margin: .1em;
+}
+.buttons:hover,
+.buttons:focus-visible {
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+}
+.buttons:active {
+    background: var(--c);
+    color: #fff;
 }
