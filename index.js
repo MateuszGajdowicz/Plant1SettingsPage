@@ -66,13 +66,13 @@
 
 
     window.onload = function() {
-        var NewPlantName1 = localStorage.getItem("NewPlantName1");
+        var NewPlantName1 = localStorage.getItem("NewPlantName1"); // Zmieniono na "NewPlantName1"
         if (NewPlantName1)
             document.getElementById("p1").textContent = NewPlantName1;
-        var NewRequiredMoisture1 = localStorage.getItem("NewRequiredMoisture1");
+        var NewRequiredMoisture1 = localStorage.getItem("NewRequiredMoisture1"); // Zmieniono na "NewRequiredMoisture1"
         if (NewRequiredMoisture1)
             document.getElementById("p2").textContent = NewRequiredMoisture1;
-        var NewWateringPeriod1 = localStorage.getItem("NewWateringPeriod1");
+        var NewWateringPeriod1 = localStorage.getItem("NewWateringPeriod1"); // Zmieniono na "NewWateringPeriod1"
         if (NewWateringPeriod1)
             document.getElementById("p3").textContent = NewWateringPeriod1;
 
