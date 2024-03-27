@@ -56,12 +56,12 @@
     }
 
     function SaveOnClick() {
-        let NewPlantName = document.getElementById('p1').textContent;
-        localStorage.setItem("NewPlantName", NewPlantName);
-        let NewRequiredMoisture = document.getElementById('p2').textContent;
-        localStorage.setItem("NewRequiredMoisture", NewRequiredMoisture);
-        let NewWateringPeriod = document.getElementById('p3').textContent;
-        localStorage.setItem("NewWateringPeriod", NewWateringPeriod);
+        let NewPlantName1 = document.getElementById('p1').textContent;
+        localStorage.setItem("NewPlantName", NewPlantName1);
+        let NewRequiredMoisture1 = document.getElementById('p2').textContent;
+        localStorage.setItem("NewRequiredMoisture", NewRequiredMoisture1);
+        let NewWateringPeriod1 = document.getElementById('p3').textContent;
+        localStorage.setItem("NewWateringPeriod", NewWateringPeriod1);
     }
 
     window.onload = function() {
