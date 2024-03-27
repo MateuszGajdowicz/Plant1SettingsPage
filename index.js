@@ -1,10 +1,10 @@
     function SetName() {
-        let PlantName1 = document.getElementById('p1');
-        let NewPlantName1 = window.prompt("Name your plant :)");
-        if (NewPlantName1 == null || NewPlantName1 == "") {
+        let PlantName = document.getElementById('p1');
+        let NewPlantName = window.prompt("Name your plant :)");
+        if (NewPlantName == null || NewPlantName == "") {
             PlantName1.textContent = "Plant";
         } else {
-            PlantName1.textContent = NewPlantName1;
+            PlantName1.textContent = NewPlantName;
         }
     }
 
