@@ -57,11 +57,11 @@
 
     function SaveOnClick() {
         let NewPlantName1 = document.getElementById('p1').textContent;
-        localStorage.setItem("NewPlantName", NewPlantName1);
+        localStorage.setItem("NewPlantName1", NewPlantName1);
         let NewRequiredMoisture1 = document.getElementById('p2').textContent;
-        localStorage.setItem("NewRequiredMoisture", NewRequiredMoisture1);
+        localStorage.setItem("NewRequiredMoisture1", NewRequiredMoisture1);
         let NewWateringPeriod1 = document.getElementById('p3').textContent;
-        localStorage.setItem("NewWateringPeriod", NewWateringPeriod1);
+        localStorage.setItem("NewWateringPeriod1", NewWateringPeriod1);
     }
 
     window.onload = function() {
