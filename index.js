@@ -4,7 +4,7 @@
         if (NewPlantName == null || NewPlantName == "") {
             PlantName.textContent = "Plant";
         } else {
-            PlantName1.textContent = NewPlantName;
+            PlantName.textContent = NewPlantName;
         }
     }
 
