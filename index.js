@@ -2,7 +2,7 @@
         let PlantName = document.getElementById('p1');
         let NewPlantName = window.prompt("Name your plant :)");
         if (NewPlantName == null || NewPlantName == "") {
-            PlantName1.textContent = "Plant";
+            PlantName.textContent = "Plant";
         } else {
             PlantName1.textContent = NewPlantName;
         }
